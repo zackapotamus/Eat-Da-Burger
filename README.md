@@ -29,8 +29,11 @@ To install the necessary dependencies, run the following command:
 npm install
 ```
 
+Then run the schema.sql commands into your MySQL database. Modify the connection.js to point to your database.
+
 ## Usage
 
+Run the `node server.js` command to start the server.
 Enter the name of a burger you would like to eat and click the submit button. This will add the burger to the list of burgers to eat. Click the Devour button next to the burger you want to eat, and it will be placed int the devoured burger list.
 
 ## License

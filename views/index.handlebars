@@ -28,15 +28,16 @@
         </div>
       </div>
       <div class="col-6">
-        {{!-- Devoured Burgers --}}
-        <ol class="list-group">
-          {{#each devoured}}
-          <li class="list-group-item list-group-item-action disabled ordered-list-item" aria-disabled="true">
-            {{name}}
-          </li>
-          {{/each}}
-        </ol>
-
+        <div class="row justify-content-center">
+          {{!-- Devoured Burgers --}}
+          <ol class="list-group">
+            {{#each devoured}}
+            <li class="list-group-item list-group-item-action disabled ordered-list-item" aria-disabled="true">
+              {{name}}
+            </li>
+            {{/each}}
+          </ol>
+        </div>
       </div>
     </div>
   </div>

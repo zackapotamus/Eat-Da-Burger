@@ -1,0 +1,82 @@
+<div class="container">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-12 text-center">
+        {{!-- <i class="fal fa-cheeseburger"></i> --}}
+        <h1>Eat-Da-Burger</h1>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-6">
+        <div class="row justify-content-center">
+          <div class="col-9">
+            {{!-- New Burger --}}
+            {{#each burgers}}
+            {{#unless devoured}}
+            <li class="list-group-item list-group-item-action">
+              {{name}}
+              <button class='btn-small float-right devour' data-id="{{id}}">Devour!</button>
+            </li>
+            {{/unless}}
+            {{/each}}
+          </div>
+          <div class="col-3">
+            {{!-- Devour Button --}}
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        {{!-- Devoured Burgers --}}
+        <ul class="list-group">
+          {{#each burgers}}
+          {{#if devoured}}
+          <li class="list-group-item list-group-item-action disabled" aria-disabled="true">
+            {{name}}
+          </li>
+          {{/if}}
+          {{/each}}
+        </ul>
+
+      </div>
+    </div>
+  </div>
+  <div class="container mt-3">
+    <div class="row justify-content-center">
+
+      <textarea class="col-5" id="burger-textarea">
+        {{!-- <textarea id="burger-textarea">
+  
+          </textarea> --}}
+      </textarea>
+    </div>
+    <div class="row justify-content-center text-center">
+      <div class="col-12 justify-content-center mt-3">
+        <button class="btn-primary" id="submit-burger">Submit</button>
+        <br/>
+        <p>Enter a burger you want to eat then click the Submit button.</p>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+{{!-- <h2>Add a Burger</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="ca">Burger Name:</label>
+    <input type="text" id="ca" name="name">
+  </div>
+
+  <div class="form-group">
+    <label for="slee">Devoured?</label><br>
+    <input type="radio" name="devoured" value="1" checked> Devoured!<br>
+    <input type="radio" name="devoured" value="0"> Not Devoured
+  </div>
+
+  <button type="submit">Add Burger</button>
+</form> --}}

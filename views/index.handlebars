@@ -13,14 +13,14 @@
         <div class="row justify-content-center">
           <div class="col-9">
             {{!-- New Burger --}}
-            {{#each burgers}}
-            {{#unless devoured}}
-            <li class="list-group-item list-group-item-action">
-              {{name}}
-              <button class='btn-small float-right devour' data-id="{{id}}">Devour!</button>
-            </li>
-            {{/unless}}
-            {{/each}}
+            <ol>
+              {{#each burgers}}
+              <li class="list-group-item list-group-item-action ordered-list-item">
+                {{name}}
+                <button class='btn-small float-right devour' data-id="{{id}}">Devour!</button>
+              </li>
+              {{/each}}
+            </ol>
           </div>
           <div class="col-3">
             {{!-- Devour Button --}}
@@ -29,15 +29,13 @@
       </div>
       <div class="col-6">
         {{!-- Devoured Burgers --}}
-        <ul class="list-group">
-          {{#each burgers}}
-          {{#if devoured}}
-          <li class="list-group-item list-group-item-action disabled" aria-disabled="true">
+        <ol class="list-group">
+          {{#each devoured}}
+          <li class="list-group-item list-group-item-action disabled ordered-list-item" aria-disabled="true">
             {{name}}
           </li>
-          {{/if}}
           {{/each}}
-        </ul>
+        </ol>
 
       </div>
     </div>
@@ -54,7 +52,7 @@
     <div class="row justify-content-center text-center">
       <div class="col-12 justify-content-center mt-3">
         <button class="btn-primary" id="submit-burger">Submit</button>
-        <br/>
+        <br />
         <p>Enter a burger you want to eat then click the Submit button.</p>
       </div>
     </div>

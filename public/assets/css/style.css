@@ -1,3 +1,7 @@
 .list-group-item.list-group-item-action.ordered-list-item {
   display: list-item;
 }
+
+#main-hamburger-icon {
+  font-size: 7rem;
+}

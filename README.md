@@ -17,6 +17,8 @@ a restaurant app that lets users input the names of burgers they'd like to eat
 
 * [Tests](#tests)
 
+* [Screenshot](#screenshot)
+
 * [Links](#links)
 
 * [Questions](#questions)
@@ -51,6 +53,10 @@ To run tests, please run the following command:
 ```
 N/A
 ```
+
+## Screenshot
+
+![Screenshot](./public/assets/screenshots/screenshot.png "Screenshot")
 
 ## Links
 

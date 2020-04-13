@@ -68,5 +68,5 @@ N/A
 
 <img src="https://avatars3.githubusercontent.com/u/28291062?v=4" alt="avatar" style="border-radius: 16px;" width="30" />
 
-If you have any questions about the repo, open an issue or contact [zackapotamus](https://api.github.com/users/zackapotamus) at (zack.hayden@gmail.com)[mailto:zack.hayden@gmail.com]).
+If you have any questions about the repo, open an issue or contact [zackapotamus](https://api.github.com/users/zackapotamus) at [zack.hayden@gmail.com](mailto:zack.hayden@gmail.com).
 

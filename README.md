@@ -60,9 +60,9 @@ N/A
 
 ## Links
 
-(GitHub Repository)[https://github.com/zackapotamus/Eat-Da-Burger]
+[GitHub Repository](https://github.com/zackapotamus/Eat-Da-Burger)
 
-(Heroku Hosted Page)[https://evening-wildwood-51374.herokuapp.com/]
+[Heroku Hosted Page](https://evening-wildwood-51374.herokuapp.com)
 
 ## Questions
 
